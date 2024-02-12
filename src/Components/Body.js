@@ -26,7 +26,7 @@ function Body() {
                         </div>
                         <p className='hello'>Hello I'm</p>
                     </div>
-                    <p className='name'>Bhaskar Nandy1</p>
+                    <p className='name'>Bhaskar Nandy</p>
 
                     <div className='photo_and_bio_container'>
                         <div className='photo_and_bio'>

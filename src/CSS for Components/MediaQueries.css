@@ -9,7 +9,7 @@
         bottom: 0;
         transform: translateX(-50%);
         width: 250px;
-        height: 390px;
+        height: 310px;
     }
 
     .my_photo{
@@ -24,6 +24,10 @@
         top: auto;
         margin-left: 0px;
     }
+
+    .bio{
+        font-size: 14px;
+    }
 }
 
 @media(min-width: 301px) and (max-width: 500px){
@@ -37,7 +41,7 @@
         bottom: 0;
         transform: translateX(-50%);
         width: 90vw;
-        height: 380px;
+        height: 370px;
     }
 
     .my_photo{
@@ -51,6 +55,10 @@
         top: auto;
         margin-top: 20px;
         margin-left: 0px;
+    }
+
+    .bio{
+        font-size: 16px;
     }
 }
 
