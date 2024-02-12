@@ -120,6 +120,7 @@
     position: absolute;
     top: 60px;
     margin-left: 380px;
+    -webkit-tap-highlight-color: transparent;
 }
 .load_more_btn:hover,
 .load_more_btn:active {
@@ -127,6 +128,7 @@
 }
 
 .load_more_btn .depth {
+    -webkit-tap-highlight-color: transparent;
     transition: 0.3s all ease-in-out;
     background: #444;
     border: none;
