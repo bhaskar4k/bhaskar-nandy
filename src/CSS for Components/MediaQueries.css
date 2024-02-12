@@ -1,0 +1,63 @@
+@media (max-width: 300px){
+    .name{
+        font-size: 35px;
+    }
+
+    .photo_and_bio_container{
+        left: 50%;
+        top: auto;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 250px;
+        height: 390px;
+    }
+
+    .my_photo{
+        width: 150px;
+        height: 150px;    
+    }
+
+    .load_more_btn {
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 20px;
+        top: auto;
+        margin-left: 0px;
+    }
+}
+
+@media(min-width: 301px) and (max-width: 500px){
+    .name{
+        font-size: 45px;
+    }
+
+    .photo_and_bio_container{
+        left: 50%;
+        top: auto;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 90vw;
+        height: 380px;
+    }
+
+    .my_photo{
+        width: 50vw;
+        height: 50vw;    
+    }
+
+    .load_more_btn {
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+}
+
+@media(min-width: 501px) and (max-width: 768px){
+
+}
+
+@media(min-width: 769px) and (max-width: 1200px){
+
+}
