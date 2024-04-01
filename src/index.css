@@ -17,7 +17,6 @@ code {
   height: 80px;
   background-color: rgb(34, 29, 43);
   position: relative;
-  margin-top: 0px;
 }
 
 .my_photo{
@@ -41,9 +40,9 @@ code {
   font-size: 2rem;
   font-weight: 500;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 80px;
-  transform: translateY(-40%);
+  transform: translateY(-50%);
   margin: 0;
 }
 
