@@ -77,4 +77,9 @@ code {
       height: 0px;
       overflow: hidden;
     }
+
+    #links img{
+      width: 35px;
+      margin: 7px 10px;
+    }
 }

@@ -13,7 +13,7 @@ function Home() {
     function menu_control() {
         console.log(document.getElementById("links").style.height)
         if (document.getElementById("links").style.height === "0px") {
-            document.getElementById("links").style.height = "490px";
+            document.getElementById("links").style.height = "320px";
         } else {
             document.getElementById("links").style.height = "-0px";
         }
