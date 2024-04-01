@@ -28,12 +28,12 @@ function Home() {
                 <p className='my_name'>Bhaskar Nandy</p>
 
                 <div id='links'>
-                    <a href="a" target='_blank'><img src={codeforces_icon} alt=''></img></a>
-                    <a href="a" target='_blank'><img src={leetcode_icon} alt=''></img></a>
-                    <a href="a" target='_blank'><img src={github_icon} alt=''></img></a>
-                    <a href="a" target='_blank'><img src={insta_gram_icon} alt=''></img></a>
-                    <a href="a" target='_blank'><img src={twitter_icon} alt=''></img></a>
-                    <a href="a" target='_blank'><img src={linkedin_icon} alt=''></img></a>
+                    <a href="https://codeforces.com/profile/bhaskar_op" target='_blank' rel="noreferrer"><img src={codeforces_icon} alt=''></img></a>
+                    <a href="https://leetcode.com/bhaskar_op/" target='_blank' rel="noreferrer"><img src={leetcode_icon} alt=''></img></a>
+                    <a href="https://github.com/bhaskar4k" target='_blank' rel="noreferrer"><img src={github_icon} alt=''></img></a>
+                    <a href="https://www.instagram.com/brainlagged_engineer/" target='_blank' rel="noreferrer"><img src={insta_gram_icon} alt=''></img></a>
+                    <a href="https://twitter.com/JoshraK_4K" target='_blank' rel="noreferrer"><img src={twitter_icon} alt=''></img></a>
+                    <a href="https://www.linkedin.com/in/bhaskar-nandy/" target='_blank' rel="noreferrer"><img src={linkedin_icon} alt=''></img></a>
                 </div>
 
                 <FontAwesomeIcon icon={faBars} id="menu_btn" onClick={menu_control} />
