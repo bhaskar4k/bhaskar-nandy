@@ -11,3 +11,70 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header_parent{
+  width: 100vw;
+  height: 80px;
+  background-color: rgb(34, 29, 43);
+  display: flex;
+}
+
+.my_photo{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.my_photo img{
+  width: 100%;
+  height: 100%;
+}
+
+.my_name{
+  color: white;
+  padding-top: 15px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#links{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 0;
+  transition: 0.5s all ease-in-out;
+}
+
+#links img{
+  width: 45px;
+  margin: 16px 10px;
+}
+
+#menu_btn{
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px){
+    #menu_btn{
+      display: block;
+      position: absolute;
+      right: 0;
+      margin: 20px;
+    }
+
+    #links{
+      flex-direction: column;
+      margin-top: 90px;
+      background-color: rgb(34, 29, 43);
+      padding: 0 10px;
+      border-radius: 20px;
+      margin-right: 10px;
+      height: 0px;
+      overflow: hidden;
+    }
+}
