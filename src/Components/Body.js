@@ -1,10 +1,12 @@
-import { React } from 'react';
-import Header from '../Components/Header'
+import { React, useState, useEffect } from 'react';
+import CodingAchievement from '../Components/CodingAchievement';
 
 function Body() {
     return (
         <>
-            <Header />
+            <div className='body_parent'>
+                <CodingAchievement />
+            </div>
         </>
     );
 }

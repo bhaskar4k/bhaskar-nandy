@@ -1,9 +1,11 @@
 import React from 'react';
-import Body from './Body'
+import Header from '../Components/Header'
+import Body from '../Components/Body'
 
 function Home() {
     return (
         <>
+            <Header />
             <Body />
         </>
     );
