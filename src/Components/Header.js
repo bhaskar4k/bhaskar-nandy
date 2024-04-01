@@ -14,8 +14,10 @@ function Home() {
         console.log(document.getElementById("links").style.height)
         if (document.getElementById("links").style.height === "0px") {
             document.getElementById("links").style.height = "320px";
+            document.getElementById("links").style.opacity = "1";
         } else {
             document.getElementById("links").style.height = "-0px";
+            document.getElementById("links").style.opacity = "0";
         }
     }
 
