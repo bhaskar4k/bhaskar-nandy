@@ -25,7 +25,7 @@ function Home() {
                 <div className='my_photo'>
                     <img src={myphoto} alt='' className='my_image'></img>
                 </div>
-                <div className='my_name'>Bhaskar Nandy</div>
+                <p className='my_name'>Bhaskar Nandy</p>
 
                 <div id='links'>
                     <a href="a" target='_blank'><img src={codeforces_icon} alt=''></img></a>
