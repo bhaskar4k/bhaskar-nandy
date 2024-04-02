@@ -28,7 +28,7 @@ function CodingAchievement() {
     const minutes = String(date.getMinutes()).padStart(2, '0');
     const seconds = String(date.getSeconds()).padStart(2, '0');
 
-    const current_datetime = `${year}-${month}-${day}T${hours}:${minutes}:${seconds}`;
+    //const current_datetime = `${year}-${month}-${day}T${hours}:${minutes}:${seconds}`;
 
     useEffect(() => {
         async function fetch_leetcode_data_from_api() {
@@ -39,7 +39,12 @@ function CodingAchievement() {
                 leetcode_total_solved: leetcode_total_solved_src,
                 leetcode_highest_rating: leetcode_rating_src,
                 leetcode_highest_rank: leetcode_rank_src,
-                last_api_call_datetime: current_datetime
+                last_api_call_year: year,
+                last_api_call_month: month,
+                last_api_call_day: day,
+                last_api_call_hour: hours,
+                last_api_call_minute: minutes,
+                last_api_call_second: seconds
             }
 
             try {
@@ -109,10 +114,16 @@ function CodingAchievement() {
         }
 
 
-        if (leetcode_data_in_cache === null || current_datetime - leetcode_data_in_cache.last_api_call_datetime > 7200) {
+        if (leetcode_data_in_cache === null || year !== leetcode_data_in_cache.year || month !== leetcode_data_in_cache.month ||
+            day !== leetcode_data_in_cache.day || hours !== leetcode_data_in_cache.hours) {
+            //console.log("HI1", year, leetcode_data_in_cache.year, month, leetcode_data_in_cache.month, day, leetcode_data_in_cache.day, hours, leetcode_data_in_cache.hours)
+
+            localStorage.removeItem("leetcode_data_in_cache");
+            localStorage.removeItem("codeforces_data_in_cache");
             fetch_leetcode_data_from_api();
             fetch_codeforces_data_from_api();
         } else {
+            console.log("HI2");
             fetch_leetcode_data_from_cache();
             fetch_codeforces_data_from_cache();
         }
@@ -133,7 +144,12 @@ function CodingAchievement() {
             let codeforces_data_in_cache = {
                 codeforces_highest_rating: codeforces_rating_src,
                 codeforces_highest_rank: codeforces_rank_src,
-                last_api_call_datetime: current_datetime
+                last_api_call_year: year,
+                last_api_call_month: month,
+                last_api_call_day: day,
+                last_api_call_hour: hours,
+                last_api_call_minute: minutes,
+                last_api_call_second: seconds
             }
 
             try {
