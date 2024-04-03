@@ -79,11 +79,12 @@ code {
 /* region MyInfo */
 .my_info{
   padding-top: 100px;
-  width: 1200px;
+  width: 800px;
+  max-width: 95%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .name_and_all{
@@ -128,41 +129,72 @@ code {
 .body_parent{
   background-color: rgb(65, 55, 83);
   width: 100%;
-  height: 100vh;
   max-height: auto;
   padding-top: 40px;
   box-sizing: border-box;
+  padding-bottom: 40px;
 }
 /* endregion */
 
 
 /* region - Coding Achievements */
-.coding_achievements{
-  width: 1200px;
+.coding_data_h1{
+  text-align: center;
+  color: orange;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.coding_achievements{  
+  width: 800px;
   max-width: 95%;
   margin: 0 auto;
+  margin-top: 30px;
+}
+
+.coding_achievements_parent{
+  background-color: rgba(130, 130, 130, 0.237);
+  padding: 20px;
+  border-radius: 20px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.coding_achievements_child{ 
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .leetcode_detail{
   width: 220px;
-  height: 240px;
+  /* height: 240px; */
   max-width: 95%;
   background-color: rgb(34, 29, 43);
-  padding: 10px;
+  padding: 10px 10px 15px 10px;
   border-radius: 20px;
 }
 
 .codeforces_detail{
   width: 250px;
-  height: 85px;
+  min-height: 100px;
+  max-height: 10px;
   max-width: 95%;
   background-color: rgb(34, 29, 43);
   padding: 10px;
   border-radius: 20px;
-  margin-top: 75px;
+  margin-top: 55px;
+}
+
+.bar{
+  width: 90%;
+  height: 4px;
+  border-radius: 50px;
+  margin: 0 auto;
+  background-color: orange;
+  display: block;
+  margin-bottom: 15px;
 }
 
 .leetcode_detail p, .codeforces_detail p{
@@ -258,7 +290,8 @@ code {
   background-color: rgb(34, 29, 43); /* Set the color of the scrollbar track */
 }
 
-@media (max-width: 700px){
+
+@media (max-width: 600px){
     #menu_btn{
       display: block;
       position: absolute;
@@ -284,8 +317,13 @@ code {
       margin: 7px 10px;
     }
 
-    .coding_achievements{
-      flex-direction: column;
+    .coding_achievements_parent{
+      max-width: 280px;
+      margin: 0 auto;
+    }
+
+    .coding_achievements_child{
+      flex-direction: column;      
     }
 
     .leetcode_detail, .codeforces_detail{
@@ -295,14 +333,12 @@ code {
 
     .codeforces_detail{
       margin-top: 10px;
+      max-height: 160px;
+      margin-top: 10px;
     }
 
     .my_info{
       padding-top: 40px;
-      width: 1200px;
-      max-width: 95%;
-      margin: 0 auto;
-      display: flex;
       flex-direction: column;
     }
 
@@ -331,8 +367,8 @@ code {
     }
 
     .my_pic{
-      width: 95%;
-      height: 95%;
+      width: 70%;
+      height: 70%;
       overflow: hidden;
       margin: 0 auto;
     }

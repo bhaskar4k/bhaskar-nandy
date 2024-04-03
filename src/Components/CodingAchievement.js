@@ -114,15 +114,15 @@ function CodingAchievement() {
         }
 
 
-        if (leetcode_data_in_cache === null || year !== leetcode_data_in_cache.year || month !== leetcode_data_in_cache.month ||
-            day !== leetcode_data_in_cache.day || hours !== leetcode_data_in_cache.hours) {
-            //console.log("HI1", year, leetcode_data_in_cache.year, month, leetcode_data_in_cache.month, day, leetcode_data_in_cache.day, hours, leetcode_data_in_cache.hours)
-
-            localStorage.removeItem("leetcode_data_in_cache");
-            localStorage.removeItem("codeforces_data_in_cache");
+        if (leetcode_data_in_cache === null) {
             fetch_leetcode_data_from_api();
             fetch_codeforces_data_from_api();
         } else {
+            if (year !== leetcode_data_in_cache.year || month !== leetcode_data_in_cache.month ||
+                day !== leetcode_data_in_cache.day || hours !== leetcode_data_in_cache.hours) {
+                // localStorage.removeItem("leetcode_data_in_cache");
+                // localStorage.removeItem("codeforces_data_in_cache");
+            }
             console.log("HI2");
             fetch_leetcode_data_from_cache();
             fetch_codeforces_data_from_cache();
@@ -187,23 +187,30 @@ function CodingAchievement() {
 
     return (
         <>
-            <div className='body_parent'>
-                <div className='coding_achievements'>
-                    <div className='leetcode_detail'>
-                        <p className='lc_title'>Leetcode Data</p>
-                        <p className='lc_rating'>Highest Rating: {leetcode_rank} ({Math.ceil(leetcode_rating)})</p>
-                        <p className='lc_easy'>Easy : <span>{leetcode_easy}</span></p>
-                        <span className='slight_gap'></span>
-                        <p className='lc_medium'>Medium : <span>{leetcode_medium}</span></p>
-                        <span className='slight_gap'></span>
-                        <p className='lc_hard'>Hard : <span>{leetcode_hard}</span></p>
-                        <span className='slight_gap'></span>
-                        <p className='lc_total'>Total solved : <span>{leetcode_total_solved}</span></p>
-                    </div>
+            <div className='coding_achievements'>
+                <div className='coding_achievements_parent'>
+                    <h1 className='coding_data_h1'>Coding Data</h1>
+                    <div className='coding_achievements_child'>
+                        <div className='leetcode_detail'>
+                            <p className='lc_title'>Leetcode</p>
+                            <span className='bar'></span>
 
-                    <div className='codeforces_detail'>
-                        <p className='cf_title'>Codeforces Data</p>
-                        <p className='cf_rating'>Highest Rating: <span className='cf_color'>{codeforces_rank} ({Math.ceil(codeforces_rating)})</span></p>
+                            <p className='lc_rating'>Highest Rating: {leetcode_rank} ({Math.ceil(leetcode_rating)})</p>
+                            <p className='lc_easy'>Easy : <span>{leetcode_easy}</span></p>
+                            <span className='slight_gap'></span>
+                            <p className='lc_medium'>Medium : <span>{leetcode_medium}</span></p>
+                            <span className='slight_gap'></span>
+                            <p className='lc_hard'>Hard : <span>{leetcode_hard}</span></p>
+                            <span className='slight_gap'></span>
+                            <p className='lc_total'>Total solved : <span>{leetcode_total_solved}</span></p>
+                        </div>
+
+                        <div className='codeforces_detail'>
+                            <p className='cf_title'>Codeforces</p>
+                            <span className='bar'></span>
+
+                            <p className='cf_rating'>Highest Rating: <span className='cf_color'>{codeforces_rank} ({Math.ceil(codeforces_rating)})</span></p>
+                        </div>
                     </div>
                 </div>
             </div>

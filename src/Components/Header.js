@@ -11,7 +11,6 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Home() {
     function menu_control() {
-        console.log(document.getElementById("links").style.height)
         if (document.getElementById("links").style.height === "0px") {
             document.getElementById("links").style.height = "320px";
             document.getElementById("links").style.opacity = "1";
@@ -27,7 +26,7 @@ function Home() {
                 <div className='my_photo'>
                     <img src={myphoto} alt='' className='my_image'></img>
                 </div>
-                <p className='my_name'>Bhaskar Nandy</p>
+                <p className='my_name'>Bhaskar</p>
 
                 <div id='links'>
                     <a href="https://codeforces.com/profile/bhaskar_op" target='_blank' rel="noreferrer"><img src={codeforces_icon} alt=''></img></a>
