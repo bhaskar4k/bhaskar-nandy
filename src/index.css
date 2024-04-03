@@ -400,7 +400,7 @@ code {
     }
 
     .coding_achievements_parent{
-      max-width: 300px;
+      max-width: 340px;
       margin: 0 auto;
       padding: 18px 10px;
     }
@@ -411,7 +411,7 @@ code {
     }
 
     .leetcode_detail, .codeforces_detail{
-      width: 280px;
+      width: 300px;
       margin: 0 auto;
     }
 
