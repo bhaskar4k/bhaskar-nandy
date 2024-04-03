@@ -335,6 +335,7 @@ code {
 }
 
 .company_name{
+  font-size: 1.2rem;
   color: white;
 }
 
@@ -473,5 +474,9 @@ code {
     .company_logo img{
       width: 70px;
       height: 70px;
+    }
+
+    .company_details p{
+      padding: 3px 0px;
     }
 }
