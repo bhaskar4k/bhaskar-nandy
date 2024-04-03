@@ -118,12 +118,14 @@ function CodingAchievement() {
             fetch_leetcode_data_from_api();
             fetch_codeforces_data_from_api();
         } else {
-            if (year !== leetcode_data_in_cache.year || month !== leetcode_data_in_cache.month ||
-                day !== leetcode_data_in_cache.day || hours !== leetcode_data_in_cache.hours) {
-                // localStorage.removeItem("leetcode_data_in_cache");
-                // localStorage.removeItem("codeforces_data_in_cache");
+            if (year !== leetcode_data_in_cache.last_api_call_year || month !== leetcode_data_in_cache.last_api_call_month ||
+                day !== leetcode_data_in_cache.last_api_call_day || hours !== leetcode_data_in_cache.last_api_call_hour) {
+                localStorage.removeItem("leetcode_data_in_cache");
+                localStorage.removeItem("codeforces_data_in_cache");
+                fetch_leetcode_data_from_api();
+                fetch_codeforces_data_from_api();
             }
-            console.log("HI2");
+
             fetch_leetcode_data_from_cache();
             fetch_codeforces_data_from_cache();
         }
