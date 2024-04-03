@@ -124,10 +124,10 @@ function CodingAchievement() {
                 localStorage.removeItem("codeforces_data_in_cache");
                 fetch_leetcode_data_from_api();
                 fetch_codeforces_data_from_api();
+            } else {
+                fetch_leetcode_data_from_cache();
+                fetch_codeforces_data_from_cache();
             }
-
-            fetch_leetcode_data_from_cache();
-            fetch_codeforces_data_from_cache();
         }
 
         function capitalize_first_letter(str) {

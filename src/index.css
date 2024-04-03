@@ -138,7 +138,7 @@ code {
 
 
 /* region - Coding Achievements */
-.coding_data_h1{
+.coding_data_h1, .work_exp_h1{
   text-align: center;
   color: orange;
   margin: 0;
@@ -150,6 +150,7 @@ code {
   max-width: 95%;
   margin: 0 auto;
   margin-top: 30px;
+  box-sizing: border-box;
 }
 
 .coding_achievements_parent{
@@ -158,6 +159,7 @@ code {
   border-radius: 20px;
   width: auto;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .coding_achievements_child{ 
@@ -165,26 +167,29 @@ code {
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .leetcode_detail{
-  width: 220px;
+  width: 250px;
   /* height: 240px; */
   max-width: 95%;
   background-color: rgb(34, 29, 43);
   padding: 10px 10px 15px 10px;
   border-radius: 20px;
+  box-sizing: border-box;
 }
 
 .codeforces_detail{
-  width: 250px;
-  min-height: 100px;
+  width: 280px;
+  min-height: 120px;
   max-height: 10px;
   max-width: 95%;
   background-color: rgb(34, 29, 43);
   padding: 10px;
   border-radius: 20px;
   margin-top: 55px;
+  box-sizing: border-box;
 }
 
 .bar{
@@ -274,8 +279,81 @@ code {
 .cf_color{
   color: rgb(0, 225, 255);
 }
-/* endregion Body end */
+/* endregion Coding achievements end */
 
+
+/* region Work Experience */
+.work_exp_parent{
+  background-color: rgba(130, 130, 130, 0.237);
+  width: 800px;
+  max-width: 95%;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.work_exp_child{
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(34, 29, 43);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.company_info{
+  width: 100%;
+  display: flex;
+}
+
+.company_logo{
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.company_logo img{
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.company_details p{
+  margin: 0;
+  padding: 2px 0px;
+  word-break: keep-all;
+}
+
+.designation{
+  font-size: 1.3rem;
+  color: rgb(216, 141, 0);
+  font-weight: 500;
+}
+
+.company_name{
+  color: white;
+}
+
+.duration{
+  color: rgb(169, 169, 169)
+}
+
+.tech_stack{
+  color: white;
+  font-size: 17px;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.tech_stack_color{
+  color: rgb(216, 141, 0);
+  font-weight: 500;
+}
+/* endregion Work Experience */
 
 ::-webkit-scrollbar {
   width: 10px; /* Set the width of the scrollbar */
@@ -292,6 +370,10 @@ code {
 
 
 @media (max-width: 600px){
+    .my_name{
+      display: none;
+    }
+
     #menu_btn{
       display: block;
       position: absolute;
@@ -318,23 +400,24 @@ code {
     }
 
     .coding_achievements_parent{
-      max-width: 280px;
+      max-width: 300px;
       margin: 0 auto;
+      padding: 18px 10px;
     }
 
     .coding_achievements_child{
-      flex-direction: column;      
+      flex-direction: column;    
+      margin: 0 auto;        
     }
 
     .leetcode_detail, .codeforces_detail{
-      width: 260px;
+      width: 280px;
       margin: 0 auto;
     }
 
     .codeforces_detail{
       margin-top: 10px;
-      max-height: 160px;
-      margin-top: 10px;
+      max-height: 160px;      
     }
 
     .my_info{
@@ -371,5 +454,24 @@ code {
       height: 70%;
       overflow: hidden;
       margin: 0 auto;
+    }
+
+    .company_info{
+      flex-direction: column;
+    }
+
+    .company_logo{
+      width: 70px;
+      height: 70px;
+      background-color: white;
+      border-radius: 15px;
+      margin-right: 20px;
+      margin-top: 8px;
+      margin-bottom: 10px;
+    }
+
+    .company_logo img{
+      width: 70px;
+      height: 70px;
     }
 }
