@@ -15,7 +15,7 @@ function Skills() {
     return (
         <>
             <div className='skill_parent'>
-                <h1 className='work_exp_h1'>Skills</h1>
+                <h1 className='skill_h1'>Skills</h1>
                 <div className='skills'>{skill}</div>
             </div>
         </>

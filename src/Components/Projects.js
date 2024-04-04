@@ -25,7 +25,7 @@ function Projects() {
     return (
         <>
             <div className='project_parent'>
-                <h1 className='work_exp_h1'>Projects</h1>
+                <h1 className='project_h1'>Projects</h1>
                 {all_projects}
             </div>
         </>
