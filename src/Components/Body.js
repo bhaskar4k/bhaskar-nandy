@@ -4,6 +4,7 @@ import MyInfo from '../Components/MyInfo';
 import WorkExperience from '../Components/WorkExperience';
 import Projects from '../Components/Projects';
 import Skills from '../Components/Skills';
+import ConnectMe from '../Components/ConnectMe';
 
 function Body() {
     return (
@@ -14,6 +15,7 @@ function Body() {
                 <WorkExperience />
                 <Projects />
                 <Skills />
+                <ConnectMe />
             </div>
         </>
     );

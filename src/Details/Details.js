@@ -43,9 +43,12 @@ let project = [
 let skills = [
     "C++", "JAVA", "Visual Basic", "JavaScript", "C#", "SQL", "HTML", "CSS", "React.js", "Node.js",
     "Express.js", "Bootstrap", "AJAX", "JSP", "Servlet", "JDBC", "RESTful API", "MySQL", "MongoDB"
-]
+];
+
+let resume_gdrive_link = "https://drive.google.com/file/d/1eYNGNRig7PmUl1CDL4B_F-64X7fCPI87/view";
 
 export {
     leetcode_easy_src, leetcode_medium_src, leetcode_hard_src, leetcode_total_solved_src,
-    leetcode_rating_src, leetcode_rank_src, codeforces_rating_src, codeforces_rank_src, work_experience, project, skills
+    leetcode_rating_src, leetcode_rank_src, codeforces_rating_src, codeforces_rank_src, work_experience, project, skills,
+    resume_gdrive_link
 };

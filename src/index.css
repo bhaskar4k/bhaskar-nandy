@@ -87,10 +87,6 @@ code {
   justify-content: space-between;
 }
 
-.name_and_all{
-  margin-top: 40px;
-}
-
 .my_name_on_body{
   color: rgb(255, 204, 0);
   font-size: 40px;
@@ -103,6 +99,10 @@ code {
   color: white;
 }
 
+.left_margin{
+  margin-left: 18px;
+}
+
 .problem_solver{
   background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
   padding: 6px 20px;
@@ -111,10 +111,26 @@ code {
   margin-left: 5px;
 }
 
+.download_resume{
+  width: 100px;
+  margin-left: 22px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: rgba(194, 194, 194, 0.779) 0px 1px 38px, rgba(139, 139, 139, 0.756) 0px 1px 12px;
+  border: 0;
+  margin-top: 5px;
+  font-weight: 500;
+  background-color: rgb(43, 47, 65);
+  color: white;
+}
+
 .my_pic{
   width: 300px;
   height: 300px;
   overflow: hidden;
+  margin-top: 30px;
 }
 
 .my_pic img{
@@ -138,7 +154,7 @@ code {
 
 
 /* region - Coding Achievements */
-.coding_data_h1, .work_exp_h1, .project_h1{
+.coding_data_h1, .work_exp_h1, .project_h1, .connectMe_h1{
   text-align: center;
   color: orange;
   margin: 0;
@@ -456,6 +472,91 @@ code {
 }
 /* endregion Skills */
 
+
+/* region ConnectMe */
+.connectMe_parent{
+  background-color: rgba(130, 130, 130, 0.237);
+  width: 800px;
+  max-width: 95%;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  transition: 0.3s all ease-in-out;
+}
+
+.email_fields{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(34, 29, 43);
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.email_fields p{
+  color: white;  
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.required_field{
+  color: red;
+}
+
+.email_sender_name, .email_message, .emailid{
+  outline: none;
+  border-radius: 20px;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid rgb(34, 29, 43);
+  margin-bottom: 20px;
+}
+
+.email_message{
+  resize: vertical;
+  min-height: 100px;
+  font-size: 22px;
+}
+
+.send_btn_div{
+  display: flex;
+  justify-content: space-between;
+}
+
+#send_email_btn{
+  width: 100px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border: 0;
+  margin-top: 20px;
+}
+/* endregion ConnectMe */
+
+/* region EmailSendPopup */
+.popup{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.popup_msg{
+  text-align: center;
+  background-color: rgb(60, 190, 0);
+  color: white;
+  width: 230px;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+/* endregion EmailSendPopup */
+
 ::-webkit-scrollbar {
   width: 10px; /* Set the width of the scrollbar */
 }
@@ -528,10 +629,10 @@ code {
 
     .name_and_all{
       margin-top: 40px;
+      margin-bottom: 30px;
     }
 
     .my_name_on_body{
-      color: rgb(0, 255, 0);
       font-size: 40px;
       margin: 0;
     }
@@ -548,6 +649,7 @@ code {
       color: black;
       border-radius: 10px; 
       margin-left: 5px;
+      margin-top: 0;
     }
 
     .my_pic{
@@ -578,5 +680,18 @@ code {
 
     .company_details p{
       padding: 3px 0px;
+    }
+
+    .email_sender_name, .email_message, .emailid{
+      font-size: 16px;
+    }
+
+    .email_message{
+      font-size: 20px;
+    }
+
+    #send_email_btn{
+      width: 80px;
+      font-size: 16px;
     }
 }
