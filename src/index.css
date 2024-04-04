@@ -92,7 +92,7 @@ code {
 }
 
 .my_name_on_body{
-  color: rgb(0, 255, 0);
+  color: rgb(255, 204, 0);
   font-size: 40px;
   margin: 0;
 }
@@ -340,7 +340,7 @@ code {
 }
 
 .duration{
-  color: rgb(169, 169, 169)
+  color: rgb(169, 169, 169);
 }
 
 .tech_stack{
@@ -355,6 +355,60 @@ code {
   font-weight: 500;
 }
 /* endregion Work Experience */
+
+/* region Project */
+.project_parent{
+  background-color: rgba(130, 130, 130, 0.237);
+  width: 800px;
+  max-width: 95%;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.a_single_project_child{
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(34, 29, 43);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.project_info{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project_name{
+  margin: 0;
+  font-size: 1.3rem;
+  color: rgb(216, 141, 0);
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.project_buttons{
+  display: flex;
+}
+
+.project_buttons img{
+  width: 50px;
+}
+
+.proj_tech_stack{
+  font-size: 18px;
+  color: white;
+}
+
+.project_description{
+  font-size: 16px;
+  color: white;
+}
+/* endregion Project */
 
 ::-webkit-scrollbar {
   width: 10px; /* Set the width of the scrollbar */
