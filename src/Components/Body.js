@@ -3,6 +3,7 @@ import CodingAchievement from '../Components/CodingAchievement';
 import MyInfo from '../Components/MyInfo';
 import WorkExperience from '../Components/WorkExperience';
 import Projects from '../Components/Projects';
+import Skills from '../Components/Skills';
 
 function Body() {
     return (
@@ -12,6 +13,7 @@ function Body() {
                 <CodingAchievement />
                 <WorkExperience />
                 <Projects />
+                <Skills />
             </div>
         </>
     );

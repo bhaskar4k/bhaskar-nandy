@@ -22,7 +22,7 @@ let work_experience = [
         designation: "Programmer Trainee",
         tech_stack: "JAVA, SQL, MySQL, RESTful API"
     }
-]
+];
 
 let project = [
     {
@@ -38,9 +38,14 @@ let project = [
         youtube: "https://www.youtube.com/watch?v=Sh6LSSISPFo",
         description: "Developed a social media site which provides a newsfeed, can like/comment on any post and like/comment-box of every post updates in real-time. Also can follow/unfollow any user."
     }
+];
+
+let skills = [
+    "C++", "JAVA", "Visual Basic", "JavaScript", "C#", "SQL", "HTML", "CSS", "React.js", "Node.js",
+    "Express.js", "Bootstrap", "AJAX", "JSP", "Servlet", "JDBC", "RESTful API", "MySQL", "MongoDB"
 ]
 
 export {
     leetcode_easy_src, leetcode_medium_src, leetcode_hard_src, leetcode_total_solved_src,
-    leetcode_rating_src, leetcode_rank_src, codeforces_rating_src, codeforces_rank_src, work_experience, project
+    leetcode_rating_src, leetcode_rank_src, codeforces_rating_src, codeforces_rank_src, work_experience, project, skills
 };
