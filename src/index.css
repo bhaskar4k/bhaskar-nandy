@@ -1,20 +1,19 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-
 /* region - Header */
-.header_parent{
+.header_parent {
   width: 100%;
   height: 80px;
   background-color: rgb(34, 29, 43);
@@ -22,7 +21,7 @@ code {
   position: fixed;
 }
 
-.my_photo{
+.my_photo {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -33,12 +32,12 @@ code {
   transform: translateY(-50%);
 }
 
-.my_photo img{
+.my_photo img {
   width: 100%;
   height: 100%;
 }
 
-.my_name{
+.my_name {
   color: rgb(255, 119, 0);
   font-size: 2rem;
   font-weight: 500;
@@ -50,7 +49,7 @@ code {
   padding: 0;
 }
 
-#links{
+#links {
   display: flex;
   flex-direction: row;
   position: absolute;
@@ -60,13 +59,13 @@ code {
   opacity: 1;
 }
 
-#links img{
+#links img {
   width: 45px;
   margin: 16px 10px;
   user-select: none;
 }
 
-#menu_btn{
+#menu_btn {
   font-size: 35px;
   color: white;
   cursor: pointer;
@@ -77,7 +76,7 @@ code {
 /* endregion Header end */
 
 /* region MyInfo */
-.my_info{
+.my_info {
   padding-top: 100px;
   width: 800px;
   max-width: 95%;
@@ -87,38 +86,39 @@ code {
   justify-content: space-between;
 }
 
-.my_name_on_body{
+.my_name_on_body {
   color: rgb(255, 204, 0);
   font-size: 40px;
   margin: 0;
 }
 
-.who_i_am{
+.who_i_am {
   font-size: 20px;
   font-weight: 500;
   color: white;
 }
 
-.left_margin{
+.left_margin {
   margin-left: 18px;
 }
 
-.problem_solver{
+.problem_solver {
   background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
   padding: 6px 20px;
   color: black;
-  border-radius: 10px; 
+  border-radius: 10px;
   margin-left: 5px;
 }
 
-.download_resume{
+.download_resume {
   width: 100px;
   margin-left: 22px;
   font-size: 18px;
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: rgba(194, 194, 194, 0.779) 0px 1px 38px, rgba(139, 139, 139, 0.756) 0px 1px 12px;
+  box-shadow: rgba(194, 194, 194, 0.779) 0px 1px 38px,
+    rgba(139, 139, 139, 0.756) 0px 1px 12px;
   border: 0;
   margin-top: 5px;
   font-weight: 500;
@@ -126,23 +126,22 @@ code {
   color: white;
 }
 
-.my_pic{
+.my_pic {
   width: 300px;
   height: 300px;
   overflow: hidden;
   margin-top: 30px;
 }
 
-.my_pic img{
+.my_pic img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
 /* endregion */
 
-
 /* region - Body */
-.body_parent{
+.body_parent {
   background-color: rgb(65, 55, 83);
   width: 100%;
   max-height: auto;
@@ -152,16 +151,18 @@ code {
 }
 /* endregion */
 
-
 /* region - Coding Achievements */
-.coding_data_h1, .work_exp_h1, .project_h1, .connectMe_h1{
+.coding_data_h1,
+.work_exp_h1,
+.project_h1,
+.connectMe_h1 {
   text-align: center;
   color: orange;
   margin: 0;
   padding-bottom: 30px;
 }
 
-.coding_achievements{  
+.coding_achievements {
   width: 800px;
   max-width: 95%;
   margin: 0 auto;
@@ -169,7 +170,7 @@ code {
   box-sizing: border-box;
 }
 
-.coding_achievements_parent{
+.coding_achievements_parent {
   background-color: rgba(130, 130, 130, 0.237);
   padding: 20px;
   border-radius: 20px;
@@ -178,7 +179,7 @@ code {
   box-sizing: border-box;
 }
 
-.coding_achievements_child{ 
+.coding_achievements_child {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -186,7 +187,7 @@ code {
   box-sizing: border-box;
 }
 
-.leetcode_detail{
+.leetcode_detail {
   width: 250px;
   /* height: 240px; */
   max-width: 95%;
@@ -196,7 +197,7 @@ code {
   box-sizing: border-box;
 }
 
-.codeforces_detail{
+.codeforces_detail {
   width: 280px;
   min-height: 120px;
   max-height: 10px;
@@ -208,7 +209,7 @@ code {
   box-sizing: border-box;
 }
 
-.bar{
+.bar {
   width: 90%;
   height: 4px;
   border-radius: 50px;
@@ -218,11 +219,13 @@ code {
   margin-bottom: 15px;
 }
 
-.leetcode_detail p, .codeforces_detail p{
+.leetcode_detail p,
+.codeforces_detail p {
   margin: 0 auto;
 }
 
-.lc_title, .cf_title{
+.lc_title,
+.cf_title {
   font-size: 30px;
   text-align: center;
   font-weight: 500;
@@ -230,19 +233,20 @@ code {
   padding-bottom: 10px;
 }
 
-.lc_rating, .cf_rating{
+.lc_rating,
+.cf_rating {
   text-align: center;
   font-size: 17px;
   color: white;
   padding-bottom: 15px;
 }
 
-.slight_gap{
+.slight_gap {
   height: 6px;
   display: block;
 }
 
-.lc_easy{
+.lc_easy {
   font-size: 17px;
   color: rgb(0, 255, 0);
   background-color: rgba(130, 130, 130, 0.237);
@@ -254,7 +258,7 @@ code {
   justify-content: space-between;
 }
 
-.lc_medium{
+.lc_medium {
   font-size: 17px;
   color: orange;
   background-color: rgba(130, 130, 130, 0.237);
@@ -266,7 +270,7 @@ code {
   justify-content: space-between;
 }
 
-.lc_hard{
+.lc_hard {
   font-size: 17px;
   color: red;
   padding-bottom: 6px;
@@ -279,7 +283,7 @@ code {
   justify-content: space-between;
 }
 
-.lc_total{
+.lc_total {
   padding-top: 10px;
   font-size: 17px;
   color: white;
@@ -292,14 +296,13 @@ code {
   justify-content: space-between;
 }
 
-.cf_color{
+.cf_color {
   color: rgb(0, 225, 255);
 }
 /* endregion Coding achievements end */
 
-
 /* region Work Experience */
-.work_exp_parent{
+.work_exp_parent {
   background-color: rgba(130, 130, 130, 0.237);
   width: 800px;
   max-width: 95%;
@@ -310,7 +313,7 @@ code {
   border-radius: 20px;
 }
 
-.work_exp_child{
+.work_exp_child {
   width: 100%;
   margin: 0 auto;
   background-color: rgb(34, 29, 43);
@@ -319,12 +322,12 @@ code {
   border-radius: 15px;
 }
 
-.company_info{
+.company_info {
   width: 100%;
   display: flex;
 }
 
-.company_logo{
+.company_logo {
   width: 100px;
   height: 100px;
   background-color: white;
@@ -332,48 +335,48 @@ code {
   margin-right: 20px;
 }
 
-.company_logo img{
+.company_logo img {
   width: 100px;
   height: 100px;
   border-radius: 20px;
 }
 
-.company_details p{
+.company_details p {
   margin: 0;
   padding: 2px 0px;
   word-break: keep-all;
 }
 
-.designation{
+.designation {
   font-size: 1.3rem;
   color: rgb(216, 141, 0);
   font-weight: 500;
 }
 
-.company_name{
+.company_name {
   font-size: 1.2rem;
   color: white;
 }
 
-.duration{
+.duration {
   color: rgb(169, 169, 169);
 }
 
-.tech_stack{
+.tech_stack {
   color: white;
   font-size: 17px;
   margin: 0;
   padding-top: 20px;
 }
 
-.tech_stack_color{
+.tech_stack_color {
   color: rgb(216, 141, 0);
   font-weight: 500;
 }
 /* endregion Work Experience */
 
 /* region Project */
-.project_parent{
+.project_parent {
   background-color: rgba(130, 130, 130, 0.237);
   width: 800px;
   max-width: 95%;
@@ -384,7 +387,7 @@ code {
   border-radius: 20px;
 }
 
-.a_single_project_child{
+.a_single_project_child {
   width: 100%;
   margin: 0 auto;
   background-color: rgb(34, 29, 43);
@@ -393,13 +396,13 @@ code {
   border-radius: 15px;
 }
 
-.project_info{
+.project_info {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.project_name{
+.project_name {
   margin: 0;
   font-size: 1.3rem;
   color: rgb(216, 141, 0);
@@ -407,34 +410,40 @@ code {
   padding-top: 10px;
 }
 
-.project_buttons{
+.project_buttons {
   display: flex;
 }
 
-.project_buttons img{
+.project_buttons img {
   width: 50px;
 }
 
-.proj_tech_stack{
+.proj_tech_stack {
   font-size: 18px;
   color: white;
 }
 
-.project_description{
+.project_description {
   font-size: 16px;
   color: white;
+}
+
+li {
+  color: white;
+  text-align: justify;
+  padding: 3px 0;
 }
 /* endregion Project */
 
 /* region Skills */
-.skill_h1{
+.skill_h1 {
   text-align: center;
   color: orange;
   margin: 0;
   padding-bottom: 20px;
 }
 
-.skill_parent{
+.skill_parent {
   background-color: rgba(130, 130, 130, 0.237);
   width: 800px;
   max-width: 95%;
@@ -445,24 +454,24 @@ code {
   border-radius: 20px;
 }
 
-.skills{
+.skills {
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.a_single_skill{
+.a_single_skill {
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 10px;
 }
 
-.a_single_skill p{
+.a_single_skill p {
   margin: 0;
 }
 
-.single_skill{
-  padding: 10px 20px;     
+.single_skill {
+  padding: 10px 20px;
   text-align: center;
   background-color: #f83600;
   color: white;
@@ -472,9 +481,8 @@ code {
 }
 /* endregion Skills */
 
-
 /* region ConnectMe */
-.connectMe_parent{
+.connectMe_parent {
   background-color: rgba(130, 130, 130, 0.237);
   width: 800px;
   max-width: 95%;
@@ -486,7 +494,7 @@ code {
   transition: 0.3s all ease-in-out;
 }
 
-.email_fields{
+.email_fields {
   display: flex;
   flex-direction: column;
   background-color: rgb(34, 29, 43);
@@ -495,17 +503,19 @@ code {
   border-radius: 20px;
 }
 
-.email_fields p{
-  color: white;  
+.email_fields p {
+  color: white;
   margin: 0;
   padding-bottom: 5px;
 }
 
-.required_field{
+.required_field {
   color: red;
 }
 
-.email_sender_name, .email_message, .emailid{
+.email_sender_name,
+.email_message,
+.emailid {
   outline: none;
   border-radius: 20px;
   font-size: 18px;
@@ -514,31 +524,32 @@ code {
   margin-bottom: 20px;
 }
 
-.email_message{
+.email_message {
   resize: vertical;
   min-height: 100px;
   font-size: 22px;
 }
 
-.send_btn_div{
+.send_btn_div {
   display: flex;
   justify-content: space-between;
 }
 
-#send_email_btn{
+#send_email_btn {
   width: 100px;
   font-size: 18px;
   padding: 10px;
   border-radius: 50px;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   border: 0;
   margin-top: 20px;
 }
 /* endregion ConnectMe */
 
 /* region EmailSendPopup */
-.popup{
+.popup {
   width: 100%;
   text-align: center;
   display: flex;
@@ -546,7 +557,7 @@ code {
   justify-content: space-around;
 }
 
-.popup_msg{
+.popup_msg {
   text-align: center;
   background-color: rgb(60, 190, 0);
   color: white;
@@ -570,128 +581,130 @@ code {
   background-color: rgb(34, 29, 43); /* Set the color of the scrollbar track */
 }
 
+@media (max-width: 600px) {
+  .my_name {
+    display: none;
+  }
 
-@media (max-width: 600px){
-    .my_name{
-      display: none;
-    }
+  #menu_btn {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin: 20px;
+  }
 
-    #menu_btn{
-      display: block;
-      position: absolute;
-      right: 0;
-      margin: 20px;
-    }
+  #links {
+    flex-direction: column;
+    margin-top: 90px;
+    background-color: rgb(34, 29, 43);
+    padding: 0 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+    height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    border: 2px solid white;
+  }
 
-    #links{
-      flex-direction: column;
-      margin-top: 90px;
-      background-color: rgb(34, 29, 43);
-      padding: 0 10px;
-      border-radius: 20px;
-      margin-right: 10px;
-      height: 0px;
-      overflow: hidden;
-      opacity: 0;
-      border: 2px solid white;
-    }
+  #links img {
+    width: 35px;
+    margin: 7px 10px;
+  }
 
-    #links img{
-      width: 35px;
-      margin: 7px 10px;
-    }
+  .coding_achievements_parent {
+    max-width: 340px;
+    margin: 0 auto;
+    padding: 18px 10px;
+  }
 
-    .coding_achievements_parent{
-      max-width: 340px;
-      margin: 0 auto;
-      padding: 18px 10px;
-    }
+  .coding_achievements_child {
+    flex-direction: column;
+    margin: 0 auto;
+  }
 
-    .coding_achievements_child{
-      flex-direction: column;    
-      margin: 0 auto;        
-    }
+  .leetcode_detail,
+  .codeforces_detail {
+    width: 300px;
+    margin: 0 auto;
+  }
 
-    .leetcode_detail, .codeforces_detail{
-      width: 300px;
-      margin: 0 auto;
-    }
+  .codeforces_detail {
+    margin-top: 10px;
+    max-height: 160px;
+  }
 
-    .codeforces_detail{
-      margin-top: 10px;
-      max-height: 160px;      
-    }
+  .my_info {
+    padding-top: 40px;
+    flex-direction: column;
+  }
 
-    .my_info{
-      padding-top: 40px;
-      flex-direction: column;
-    }
+  .name_and_all {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
 
-    .name_and_all{
-      margin-top: 40px;
-      margin-bottom: 30px;
-    }
+  .my_name_on_body {
+    font-size: 40px;
+    margin: 0;
+  }
 
-    .my_name_on_body{
-      font-size: 40px;
-      margin: 0;
-    }
+  .who_i_am {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+  }
 
-    .who_i_am{
-      font-size: 20px;
-      font-weight: 500;
-      color: white;
-    }
+  .problem_solver {
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    padding: 6px 20px;
+    color: black;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-top: 0;
+  }
 
-    .problem_solver{
-      background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
-      padding: 6px 20px;
-      color: black;
-      border-radius: 10px; 
-      margin-left: 5px;
-      margin-top: 0;
-    }
+  .my_pic {
+    width: 70%;
+    height: 70%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
 
-    .my_pic{
-      width: 70%;
-      height: 70%;
-      overflow: hidden;
-      margin: 0 auto;
-    }
+  .company_info {
+    flex-direction: column;
+  }
 
-    .company_info{
-      flex-direction: column;
-    }
+  .company_logo {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+  }
 
-    .company_logo{
-      width: 70px;
-      height: 70px;
-      background-color: white;
-      border-radius: 15px;
-      margin-right: 20px;
-      margin-top: 8px;
-      margin-bottom: 10px;
-    }
+  .company_logo img {
+    width: 70px;
+    height: 70px;
+  }
 
-    .company_logo img{
-      width: 70px;
-      height: 70px;
-    }
+  .company_details p {
+    padding: 3px 0px;
+  }
 
-    .company_details p{
-      padding: 3px 0px;
-    }
+  .email_sender_name,
+  .email_message,
+  .emailid {
+    font-size: 16px;
+  }
 
-    .email_sender_name, .email_message, .emailid{
-      font-size: 16px;
-    }
+  .email_message {
+    font-size: 20px;
+  }
 
-    .email_message{
-      font-size: 20px;
-    }
-
-    #send_email_btn{
-      width: 80px;
-      font-size: 16px;
-    }
+  #send_email_btn {
+    width: 80px;
+    font-size: 16px;
+  }
 }
