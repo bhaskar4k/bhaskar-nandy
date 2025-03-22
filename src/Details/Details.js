@@ -109,8 +109,9 @@ let skills = [
   "MongoDB",
 ];
 
-let resume_gdrive_link =
-  "https://drive.google.com/file/d/1eYNGNRig7PmUl1CDL4B_F-64X7fCPI87/view";
+// let resume_gdrive_link = "https://drive.google.com/file/d/1eYNGNRig7PmUl1CDL4B_F-64X7fCPI87/view";
+
+let resume_gdrive_link = "";
 
 export {
   leetcode_easy_src,
